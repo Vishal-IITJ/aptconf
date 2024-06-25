@@ -1,0 +1,11 @@
+[Unit]
+Description=My Script Service
+After=network.target
+
+[Service]
+User=Admin
+WorkingDirectory=/home/Admin/aptconf
+ExecStart=/bin/bash /home/Admin/aptconf/server.sh
+
+[Install]
+WantedBy=multi-user.target

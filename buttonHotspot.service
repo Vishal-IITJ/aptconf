@@ -1,0 +1,11 @@
+[Unit]
+Description=My Script Service
+After=network.target
+
+[Service]
+User=Admin
+WorkingDirectory=/home/Admin/aptconf
+ExecStart=/bin/bash /home/Admin/aptconf/buttonHotspot.sh
+
+[Install]
+WantedBy=multi-user.target
